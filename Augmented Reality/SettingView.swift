@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct SettingsView: View {
+    var body: some View {
+     NavigationView {
+         ScrollView {
+          Text("hi")
+         }.navigationTitle("Setting")
+     }
+    }
+}

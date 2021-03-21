@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22C2DCA426063D9700181376 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2DCA326063D9700181376 /* HomeView.swift */; };
+		22C2DCAC2606687000181376 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2DCAB2606687000181376 /* SettingView.swift */; };
+		22C2DCB12606699300181376 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2DCB02606699300181376 /* ARView.swift */; };
 		E6C4E7E925FE266C00FC41F9 /* Augmented_RealityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4E7E825FE266C00FC41F9 /* Augmented_RealityApp.swift */; };
 		E6C4E7EB25FE266C00FC41F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4E7EA25FE266C00FC41F9 /* ContentView.swift */; };
 		E6C4E7ED25FE266E00FC41F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C4E7EC25FE266E00FC41F9 /* Assets.xcassets */; };
@@ -33,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22C2DCA326063D9700181376 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		22C2DCAB2606687000181376 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		22C2DCB02606699300181376 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		E6C4E7E525FE266C00FC41F9 /* Augmented Reality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Augmented Reality.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C4E7E825FE266C00FC41F9 /* Augmented_RealityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Augmented_RealityApp.swift; sourceTree = "<group>"; };
 		E6C4E7EA25FE266C00FC41F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 				E6C4E7EC25FE266E00FC41F9 /* Assets.xcassets */,
 				E6C4E7F125FE266E00FC41F9 /* Info.plist */,
 				E6C4E7EE25FE266E00FC41F9 /* Preview Content */,
+				22C2DCA326063D9700181376 /* HomeView.swift */,
+				22C2DCAB2606687000181376 /* SettingView.swift */,
+				22C2DCB02606699300181376 /* ARView.swift */,
 			);
 			path = "Augmented Reality";
 			sourceTree = "<group>";
@@ -259,6 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C2DCB12606699300181376 /* ARView.swift in Sources */,
+				22C2DCA426063D9700181376 /* HomeView.swift in Sources */,
+				22C2DCAC2606687000181376 /* SettingView.swift in Sources */,
 				E6C4E7EB25FE266C00FC41F9 /* ContentView.swift in Sources */,
 				E6C4E7E925FE266C00FC41F9 /* Augmented_RealityApp.swift in Sources */,
 			);
@@ -419,7 +431,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Augmented Reality/Preview Content\"";
-				DEVELOPMENT_TEAM = QPAD622XBK;
+				DEVELOPMENT_TEAM = 7656Y4U6FJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Augmented Reality/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -427,7 +439,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sam.Augmented-Reality";
+				PRODUCT_BUNDLE_IDENTIFIER = sam.ar.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,7 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Augmented Reality/Preview Content\"";
-				DEVELOPMENT_TEAM = QPAD622XBK;
+				DEVELOPMENT_TEAM = 7656Y4U6FJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Augmented Reality/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -449,7 +461,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sam.Augmented-Reality";
+				PRODUCT_BUNDLE_IDENTIFIER = sam.ar.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
