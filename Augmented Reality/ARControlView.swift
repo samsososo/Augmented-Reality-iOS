@@ -13,7 +13,6 @@ struct ControlView: View {
     var body: some View {
         VStack {
             ControlVisibilityToggleButton(
-//                isControlsVisible: $isControlsVisible
                 shouldShowModal: $shouldShowModal
             )
             Spacer()
@@ -22,7 +21,6 @@ struct ControlView: View {
     }
 }
 struct ControlVisibilityToggleButton: View {
-//    @Binding var isControlsVisible: Bool
     @Binding var shouldShowModal: Bool
     var body: some View {
         HStack{
@@ -53,7 +51,6 @@ struct ControlButtonBar: View {
         HStack{
             ControlButton(systemIconName: "clock.fill"){
                 print("hi")
-                
             }
             Spacer()
             ControlButton(systemIconName: "square.grid.2x2"){

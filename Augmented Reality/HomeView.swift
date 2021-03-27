@@ -16,7 +16,6 @@ struct HomeView: View {
         let description: String
         let dangerousRate: Int
     }
-    
     let courses: [Course] = [
         .init(name: "Fire", imageName: "fire", numLessons: 35, totalTime: 10.35, description:"This is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire Accident", dangerousRate: 5),
         .init(name: "Water", imageName: "water", numLessons: 50, totalTime: 20.5, description:"This is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water Accident",dangerousRate: 3),
@@ -34,8 +33,6 @@ struct HomeView: View {
                             .cornerRadius(5)
                             .padding(.leading, 10)
                             .padding(.trailing, 10)
-//                            .scaledToFill()
-                            
                         HStack(alignment: .top) {
                             VStack(alignment: .leading) {
                                 Text(course.name).font(.system(size: 30, weight: .bold))

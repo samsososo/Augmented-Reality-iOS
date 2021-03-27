@@ -18,33 +18,25 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            
             ZStack {
                 Spacer()
                     .fullScreenCover(isPresented: $shouldShowModal, content: {
                         MainARView(shouldShowModal: $shouldShowModal)
                 })
-                
                 switch selectedIndex {
                 case 0:
                     HomeView()
-      
-                
                 case 2:
                     SettingsView()
-                    
                 default:
                     NavigationView {
                         Text("Remaining tabs")
                         
                     }
                 }
-                
             }
-
             Divider()
                 .padding(.bottom, 8)
-            
             HStack {
                 ForEach(0..<3) { num in
                     Button(action: {
