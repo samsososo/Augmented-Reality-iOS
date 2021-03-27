@@ -16,7 +16,6 @@ struct HomeView: View {
         let description: String
         let dangerousRate: Int
     }
-    
     let courses: [Course] = [
         .init(name: "Fire", imageName: "fire", numLessons: 35, totalTime: 10.35, description:"This is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire AccidentThis is Fire Accident", dangerousRate: 5),
         .init(name: "Water", imageName: "water", numLessons: 50, totalTime: 20.5, description:"This is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water AccidentThis is Water Accident",dangerousRate: 3),
@@ -30,7 +29,10 @@ struct HomeView: View {
                     ForEach(courses, id: \.self) { course in
                         Image(course.imageName)
                             .resizable()
-                            .scaledToFill()
+                            .aspectRatio(contentMode: .fit)
+                            .cornerRadius(5)
+                            .padding(.leading, 10)
+                            .padding(.trailing, 10)
                         HStack(alignment: .top) {
                             VStack(alignment: .leading) {
                                 Text(course.name).font(.system(size: 30, weight: .bold))
@@ -38,13 +40,14 @@ struct HomeView: View {
                             Spacer()
                             HStack {
                                 ForEach(0..<course.dangerousRate){rate in
-                                    Image(systemName: "house")
+                                    Image(systemName: "exclamationmark.shield")
                                     .font(.system(size: 20, weight: .bold))
                                 }
                             }.foregroundColor(.red)
                             .padding(.vertical, 6)
                             .padding(.horizontal, 12)
                             .background(Color.black)
+                            
                             .cornerRadius(16)
                         }.padding(.top, 8)
                         .padding(.horizontal)
