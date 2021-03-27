@@ -9,12 +9,14 @@ import Foundation
 import SwiftUI
 import RealityKit
 
-
 struct MainARView: View {
+    @Binding var shouldShowModal: Bool
     var body: some View {
         ZStack(alignment: .bottom) {
             ARViewContainer()
-            ControlView()
+            ControlView(
+                shouldShowModal: $shouldShowModal
+            )
         }.edgesIgnoringSafeArea(.all)
     }
 }
