@@ -7,16 +7,23 @@
 
 import Foundation
 import SwiftUI
+import RealityKit
 
-struct ARView: View {
-//    @Environment(\.presentationMode) var presentationMode
 
-       var body: some View {
+struct MainARView: View {
+    var body: some View {
+        ZStack(alignment: .bottom) {
+            ARViewContainer()
+            ControlView()
+        }.edgesIgnoringSafeArea(.all)
+    }
+}
 
-            ScrollView {
-             Text("hi")
-            }
-        
-       }
 
+struct  ARViewContainer: UIViewRepresentable {
+    func makeUIView(context: Context) -> ARView{
+        let arView = ARView(frame: .zero)
+        return arView
+    }
+    func updateUIView(_ uiView: ARView, context: Context) {}
 }

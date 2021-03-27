@@ -26,13 +26,13 @@ struct ContentView: View {
                 
                 Spacer()
                     .fullScreenCover(isPresented: $shouldShowModal, content: {
-                        Button(action: {shouldShowModal.toggle()}, label: {
-                            Image(systemName:"arrow.left.square.fill")
-                                .font(.system(size: 30, weight: .bold))
-                                .background(Color.white)
-                                .foregroundColor(.gray)
-                        }).position(x: 20, y: 20)
-                        ARView()
+//                        Button(action: {shouldShowModal.toggle()}, label: {
+//                            Image(systemName:"arrow.left.square.fill")
+//                                .font(.system(size: 30, weight: .bold))
+//                                .background(Color.white)
+//                                .foregroundColor(.gray)
+//                        }).position(x: 20, y: 20)
+                        MainARView()
                 })
                 
                 switch selectedIndex {
