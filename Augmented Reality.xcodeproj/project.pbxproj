@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,13 @@
 		E6C4E7F025FE266E00FC41F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C4E7EF25FE266E00FC41F9 /* Preview Assets.xcassets */; };
 		E6C4E7FB25FE266E00FC41F9 /* Augmented_RealityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4E7FA25FE266E00FC41F9 /* Augmented_RealityTests.swift */; };
 		E6C4E80625FE266E00FC41F9 /* Augmented_RealityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4E80525FE266E00FC41F9 /* Augmented_RealityUITests.swift */; };
+		E6C900ED26130BD900969142 /* ARBrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C900EC26130BD900969142 /* ARBrowseView.swift */; };
+		E6C900F5261314D000969142 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C900F4261314D000969142 /* Model.swift */; };
+		E6C9DD7526144AA50020BBB8 /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E6C9DD7426144AA50020BBB8 /* tv_retro.usdz */; };
+		E6C9DD7A26144BDF0020BBB8 /* fire_selection.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E6C9DD7926144BDF0020BBB8 /* fire_selection.usdz */; };
+		E6C9DD7F261452080020BBB8 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C9DD7E261452080020BBB8 /* PlacementSettings.swift */; };
+		E6C9DD872614555B0020BBB8 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C9DD862614555B0020BBB8 /* PlacementView.swift */; };
+		E6C9DD8D26145BB60020BBB8 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = E6C9DD8C26145BB60020BBB8 /* FocusEntity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,12 @@
 		E6C4E80125FE266E00FC41F9 /* Augmented RealityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Augmented RealityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C4E80525FE266E00FC41F9 /* Augmented_RealityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Augmented_RealityUITests.swift; sourceTree = "<group>"; };
 		E6C4E80725FE266E00FC41F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6C900EC26130BD900969142 /* ARBrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARBrowseView.swift; sourceTree = "<group>"; };
+		E6C900F4261314D000969142 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E6C9DD7426144AA50020BBB8 /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tv_retro.usdz; path = ../../../../../Downloads/tv_retro.usdz; sourceTree = "<group>"; };
+		E6C9DD7926144BDF0020BBB8 /* fire_selection.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = fire_selection.usdz; path = ../../../../../Downloads/fire_selection.usdz; sourceTree = "<group>"; };
+		E6C9DD7E261452080020BBB8 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
+		E6C9DD862614555B0020BBB8 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6C9DD8D26145BB60020BBB8 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,13 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		229F098F260EBF3B00DB4CD9 /* 3D Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "3D Assets";
-			sourceTree = "<group>";
-		};
 		E6C4E7DC25FE266C00FC41F9 = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +117,7 @@
 		E6C4E7E725FE266C00FC41F9 /* Augmented Reality */ = {
 			isa = PBXGroup;
 			children = (
-				229F098F260EBF3B00DB4CD9 /* 3D Assets */,
+				E6C9DD7326144A930020BBB8 /* 3D Assets */,
 				E6C4E7E825FE266C00FC41F9 /* Augmented_RealityApp.swift */,
 				E6C4E7EA25FE266C00FC41F9 /* ContentView.swift */,
 				E6C4E7EC25FE266E00FC41F9 /* Assets.xcassets */,
@@ -120,6 +127,10 @@
 				22C2DCAB2606687000181376 /* SettingView.swift */,
 				22C2DCB02606699300181376 /* ARView.swift */,
 				229F0995260EC05E00DB4CD9 /* ARControlView.swift */,
+				E6C900EC26130BD900969142 /* ARBrowseView.swift */,
+				E6C9DD862614555B0020BBB8 /* PlacementView.swift */,
+				E6C9DD7E261452080020BBB8 /* PlacementSettings.swift */,
+				E6C900F4261314D000969142 /* Model.swift */,
 			);
 			path = "Augmented Reality";
 			sourceTree = "<group>";
@@ -150,6 +161,15 @@
 			path = "Augmented RealityUITests";
 			sourceTree = "<group>";
 		};
+		E6C9DD7326144A930020BBB8 /* 3D Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E6C9DD7926144BDF0020BBB8 /* fire_selection.usdz */,
+				E6C9DD7426144AA50020BBB8 /* tv_retro.usdz */,
+			);
+			path = "3D Assets";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +186,9 @@
 			dependencies = (
 			);
 			name = "Augmented Reality";
+			packageProductDependencies = (
+				E6C9DD8C26145BB60020BBB8 /* FocusEntity */,
+			);
 			productName = "Augmented Reality";
 			productReference = E6C4E7E525FE266C00FC41F9 /* Augmented Reality.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +260,9 @@
 				Base,
 			);
 			mainGroup = E6C4E7DC25FE266C00FC41F9;
+			packageReferences = (
+				E6C9DD8B26145BB60020BBB8 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = E6C4E7E625FE266C00FC41F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,7 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6C9DD7526144AA50020BBB8 /* tv_retro.usdz in Resources */,
 				E6C4E7F025FE266E00FC41F9 /* Preview Assets.xcassets in Resources */,
+				E6C9DD7A26144BDF0020BBB8 /* fire_selection.usdz in Resources */,
 				E6C4E7ED25FE266E00FC41F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +310,13 @@
 				22C2DCB12606699300181376 /* ARView.swift in Sources */,
 				22C2DCA426063D9700181376 /* HomeView.swift in Sources */,
 				22C2DCAC2606687000181376 /* SettingView.swift in Sources */,
+				E6C9DD7F261452080020BBB8 /* PlacementSettings.swift in Sources */,
+				E6C9DD872614555B0020BBB8 /* PlacementView.swift in Sources */,
 				E6C4E7EB25FE266C00FC41F9 /* ContentView.swift in Sources */,
 				E6C4E7E925FE266C00FC41F9 /* Augmented_RealityApp.swift in Sources */,
 				229F0996260EC05E00DB4CD9 /* ARControlView.swift in Sources */,
+				E6C900ED26130BD900969142 /* ARBrowseView.swift in Sources */,
+				E6C900F5261314D000969142 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +638,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E6C9DD8B26145BB60020BBB8 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E6C9DD8C26145BB60020BBB8 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6C9DD8B26145BB60020BBB8 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E6C4E7DD25FE266C00FC41F9 /* Project object */;
 }

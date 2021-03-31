@@ -10,13 +10,20 @@ import SwiftUI
 import RealityKit
 
 struct MainARView: View {
+    @EnvironmentObject var placementSettings: PlacementSettings
     @Binding var shouldShowModal: Bool
+    @State private var showBrowse: Bool = false
     var body: some View {
         ZStack(alignment: .bottom) {
             ARViewContainer()
-            ControlView(
-                shouldShowModal: $shouldShowModal
-            )
+            if self.placementSettings.selectedModel == nil {
+                ControlView(
+                    shouldShowModal: $shouldShowModal,
+                    showBrowse: $showBrowse
+                )
+            }else{
+                PlacementView()
+            }
         }.edgesIgnoringSafeArea(.all)
     }
 }
