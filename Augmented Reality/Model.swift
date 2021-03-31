@@ -51,6 +51,7 @@ class Model {
                 case .failure(let error):
                     print("Unable to load \(filename), Error: \(error)")
                 case .finished:
+                    print("\(filename)")
                     break
                 }
             }, receiveValue: { modelEntity in
