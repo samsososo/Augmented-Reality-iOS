@@ -19,13 +19,13 @@
 		E6C4E80625FE266E00FC41F9 /* Augmented_RealityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4E80525FE266E00FC41F9 /* Augmented_RealityUITests.swift */; };
 		E6C900ED26130BD900969142 /* ARBrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C900EC26130BD900969142 /* ARBrowseView.swift */; };
 		E6C900F5261314D000969142 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C900F4261314D000969142 /* Model.swift */; };
-		E6C9DD7A26144BDF0020BBB8 /* fire_selection.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E6C9DD7926144BDF0020BBB8 /* fire_selection.usdz */; };
 		E6C9DD7F261452080020BBB8 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C9DD7E261452080020BBB8 /* PlacementSettings.swift */; };
 		E6C9DD872614555B0020BBB8 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C9DD862614555B0020BBB8 /* PlacementView.swift */; };
 		E6C9DD8D26145BB60020BBB8 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = E6C9DD8C26145BB60020BBB8 /* FocusEntity */; };
 		E6C9DD9226145C4D0020BBB8 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C9DD9126145C4D0020BBB8 /* CustomARView.swift */; };
-		E6C9DD9A261483910020BBB8 /* water_selection.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E6C9DD99261483910020BBB8 /* water_selection.usdz */; };
-		E6C9DD9F2614BA610020BBB8 /* electronic_selection.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E6C9DD9E2614BA610020BBB8 /* electronic_selection.usdz */; };
+		E6C9DDA42614BB9B0020BBB8 /* electronic_selection.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E6C9DDA32614BB9B0020BBB8 /* electronic_selection.usdz */; };
+		E6C9DDAD2614BBA90020BBB8 /* fire_selection.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E6C9DDAB2614BBA80020BBB8 /* fire_selection.usdz */; };
+		E6C9DDAE2614BBA90020BBB8 /* water_selection.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E6C9DDAC2614BBA90020BBB8 /* water_selection.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +64,12 @@
 		E6C4E80725FE266E00FC41F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C900EC26130BD900969142 /* ARBrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARBrowseView.swift; sourceTree = "<group>"; };
 		E6C900F4261314D000969142 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		E6C9DD7926144BDF0020BBB8 /* fire_selection.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = fire_selection.usdz; path = ../../../Downloads/fire_selection.usdz; sourceTree = SOURCE_ROOT; };
 		E6C9DD7E261452080020BBB8 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		E6C9DD862614555B0020BBB8 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
 		E6C9DD9126145C4D0020BBB8 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
-		E6C9DD99261483910020BBB8 /* water_selection.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = water_selection.usdz; path = ../../../../../Downloads/water_selection.usdz; sourceTree = "<group>"; };
-		E6C9DD9E2614BA610020BBB8 /* electronic_selection.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = electronic_selection.usdz; path = ../../../../../Downloads/electronic_selection.usdz; sourceTree = "<group>"; };
+		E6C9DDA32614BB9B0020BBB8 /* electronic_selection.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = electronic_selection.usdz; sourceTree = "<group>"; };
+		E6C9DDAB2614BBA80020BBB8 /* fire_selection.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fire_selection.usdz; sourceTree = "<group>"; };
+		E6C9DDAC2614BBA90020BBB8 /* water_selection.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = water_selection.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,9 +169,9 @@
 		E6C9DD7326144A930020BBB8 /* 3D Assets */ = {
 			isa = PBXGroup;
 			children = (
-				E6C9DD7926144BDF0020BBB8 /* fire_selection.usdz */,
-				E6C9DD9E2614BA610020BBB8 /* electronic_selection.usdz */,
-				E6C9DD99261483910020BBB8 /* water_selection.usdz */,
+				E6C9DDA32614BB9B0020BBB8 /* electronic_selection.usdz */,
+				E6C9DDAB2614BBA80020BBB8 /* fire_selection.usdz */,
+				E6C9DDAC2614BBA90020BBB8 /* water_selection.usdz */,
 			);
 			path = "3D Assets";
 			sourceTree = "<group>";
@@ -285,11 +285,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6C9DD9A261483910020BBB8 /* water_selection.usdz in Resources */,
 				E6C4E7F025FE266E00FC41F9 /* Preview Assets.xcassets in Resources */,
-				E6C9DD7A26144BDF0020BBB8 /* fire_selection.usdz in Resources */,
+				E6C9DDAE2614BBA90020BBB8 /* water_selection.usdz in Resources */,
+				E6C9DDA42614BB9B0020BBB8 /* electronic_selection.usdz in Resources */,
+				E6C9DDAD2614BBA90020BBB8 /* fire_selection.usdz in Resources */,
 				E6C4E7ED25FE266E00FC41F9 /* Assets.xcassets in Resources */,
-				E6C9DD9F2614BA610020BBB8 /* electronic_selection.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +484,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Augmented Reality/Preview Content\"";
-				DEVELOPMENT_TEAM = QPAD622XBK;
+				DEVELOPMENT_TEAM = 7656Y4U6FJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Augmented Reality/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -492,7 +492,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sam.ar.Testingios;
+				PRODUCT_BUNDLE_IDENTIFIER = sam.ar.uat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -507,7 +507,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Augmented Reality/Preview Content\"";
-				DEVELOPMENT_TEAM = QPAD622XBK;
+				DEVELOPMENT_TEAM = 7656Y4U6FJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Augmented Reality/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -515,7 +515,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sam.ar.Testingios;
+				PRODUCT_BUNDLE_IDENTIFIER = sam.ar.uat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
