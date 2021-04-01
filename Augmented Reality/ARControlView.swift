@@ -51,20 +51,20 @@ struct ControlButtonBar: View {
     @Binding var showBrowse: Bool
     var body: some View {
         HStack{
-            ControlButton(systemIconName: "clock.fill"){
-                print("hi")
-            }
-            Spacer()
+//            ControlButton(systemIconName: "clock.fill"){
+//                print("hi")
+//            }
+//            Spacer()
             ControlButton(systemIconName: "square.grid.2x2"){
                 print("hi")
                 self.showBrowse.toggle()
             }.sheet(isPresented: $showBrowse, content: {
                 ARBrowseView(showBrowse: $showBrowse)
             })
-            Spacer()
-            ControlButton(systemIconName: "slider.horizontal.3"){
-                print("hi")
-            }
+//            Spacer()
+//            ControlButton(systemIconName: "slider.horizontal.3"){
+//                print("hi")
+//            }
         }
         .frame(maxWidth: 500)
         .padding(30)
